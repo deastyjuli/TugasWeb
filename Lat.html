@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventaris Barang - Halaman 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fffcfa;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .form-container input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #3e8e41;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .pagination a:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventaris Barang</h1> 
+
+        <div class="form-container">
+            <input type="text" placeholder="Nama Barang">
+            <input type="number" placeholder="Jumlah">
+            <input type="text" placeholder="Kategori">
+            <button>Tambah Barang</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Komputer</td>
+                    <td>10</td>
+                    <td>Elektronik</td>
+                </tr>
+                <tr>
+                    <td>Kursi</td>
+                    <td>5</td>
+                    <td>Furniture</td>
+                </tr>
+                <tr>
+                    <td>Kalkulator</td>
+                    <td>8</td>
+                    <td>Elektronik</td>
+                </tr>
+                <tr>
+                    <td>Pena</td>
+                    <td>12</td>
+                    <td>Alat Tulis</td>
+                </tr>
+                <tr>
+                    <td>Sapu</td>
+                    <td>3</td>
+                    <td>Peralatan</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td>15</td>
+                    <td>Elektronik</td>
+                </tr>
+                <tr>
+                    <td>Pensil</td>
+                    <td>7</td>
+                    <td>Alat Tulis</td>
+                </tr>
+                <tr>
+                    <td>Pel</td>
+                    <td>9</td>
+                    <td>Peralatan</td>
+                </tr>
+                <tr>
+                    <td>Meja</td>
+                    <td>20</td>
+                    <td>Furniture</td>
+                </tr>
+                <tr>
+                    <td>Komputer</td>
+                    <td>6</td>
+                    <td>Elektronik</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <a href="#">&larr;</a>  <!-- Tombol panah kiri -->
+            <a href="halaman2.html">&rarr;</a>  <!-- Tombol panah kanan  -->
+        </div>
+    </div>
+</body>
+</html>
